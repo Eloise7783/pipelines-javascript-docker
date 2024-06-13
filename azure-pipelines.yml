@@ -18,5 +18,5 @@ steps:
   - task: Docker@2
     inputs:
       containerRegistry: 'docker-hub'
-      repository: 'Eloise-docker-hub'
+      repository: '$(imageName)'
       command: 'push'
